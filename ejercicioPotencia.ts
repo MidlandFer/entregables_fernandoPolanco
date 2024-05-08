@@ -1,6 +1,6 @@
 import * as readlineSync from "readline-sync";
 
-//const base:number =0;
+//const base:number=0;
 //let exponente:number=0;
 
 // Función para calcular la potencia
@@ -25,4 +25,4 @@ do {
 
 // Muestro el resultado
 const potencia: number = calcPotencia(base, exponente);
-console.log("La potencia de " + potencia );
+console.log("El resultado de la potencia es:  " + potencia);
