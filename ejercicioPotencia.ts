@@ -1,8 +1,5 @@
 import * as readlineSync from "readline-sync";
 
-//const base:number=0;
-//let exponente:number=0;
-
 // Función para calcular la potencia
 function calcPotencia(base:number,exponente:number):number {
     let resultado: number = 1;
