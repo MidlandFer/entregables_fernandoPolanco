@@ -39,7 +39,7 @@ function determinarParImpar(numero: number): void {
 function dibujarLinea(){
     let linea:string =" ";
 
-    for(let i:number=0; i<= 40; i++){
+    for(let cont:number=0; cont<= 40; cont++){
         linea= linea + "-"
     }
     console.log(linea);
