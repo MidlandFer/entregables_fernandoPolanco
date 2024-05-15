@@ -31,7 +31,20 @@ function determinarParImpar(numero: number): void {
         console.log(`${numero} es un número par.`);
     } else {
         console.log(`${numero} es un número impar.`);
+    
     }
+}
+
+// Función para dibujar línea
+function dibujarLinea(){
+    let linea:string =" ";
+
+    for(let i:number=0; i<= 40; i++){
+        linea= linea + "-"
+    }
+    console.log(linea);
+
+    return linea;
 }
 
 // Encontrar el número más grande
@@ -40,3 +53,6 @@ console.log(`El número más grande del arreglo es: ${maximo}`);
 
 // Determinar si el número más grande es par o impar
 determinarParImpar(maximo);
+
+//Dibujar linea
+dibujarLinea();
