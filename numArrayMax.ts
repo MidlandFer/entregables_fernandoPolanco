@@ -8,51 +8,35 @@ más grande del arreglo e imprimirlo por consola
 global y pasarlo a una función para determinar si el
 número es par o impar
 */
+// Definir el arreglo
+const arr: number[] = [4,7,9,3,1,45,67,23,29,78,11,16];
 
-// Defino el arreglo como numero y le agrego 12 posiciones
+// Variable global para almacenar el número más grande
+let maximo: number = arr[0];
 
-const numArray : number[] = new Array (12) ;
-let indice: number = 0;
-numArray[0] = 4;
-numArray[1] = 7;
-numArray[2] = 9;
-numArray[3] = 3;
-numArray[4] = 1;
-numArray[5] = 45;
-numArray[6] = 67;
-numArray[7] = 23;
-numArray[8] = 29;
-numArray[9] = 78;
-numArray[10] = 11;
-numArray[11] = 16;
-
-
-// Guardo el numero en variable global
-let maximo: number = numArray[0];
-
-// Función para encontrar el numero mayor
-function encontrarMayor(arreglo: number[]): number {
+// Función para encontrar el número más grande
+function encontrarMaximo(arreglo: number[]): number {
     let max = arreglo[0];
-    for (let cont = 1; cont < arreglo.length; cont++) {
-        if (arreglo[cont] > max) {
-            max = arreglo[cont];
+    for (let i = 1; i < arreglo.length; i++) {
+        if (arreglo[i] > max) {
+            max = arreglo[i];
         }
     }
     return max;
 }
 
-// Función para determinar si el numero es par o impar
-function parImpar(numero: number): void {
+// Función para determinar si un número es par o impar
+function determinarParImpar(numero: number): void {
     if (numero % 2 === 0) {
-        console.log("${numero} es un numero par");
+        console.log(`${numero} es un número par.`);
     } else {
-        console.log("${numero} es un numero impar.");
+        console.log(`${numero} es un número impar.`);
     }
 }
 
-// Buscar el numero mayor
-maximo = encontrarMayor(numArray);
-console.log("El numero más grande del arreglo es: ${maximo}");
+// Encontrar el número más grande
+maximo = encontrarMaximo(arr);
+console.log(`El número más grande del arreglo es: ${maximo}`);
 
-// Consulto si el numero mayor del array es par o impar
-parImpar(maximo);
+// Determinar si el número más grande es par o impar
+determinarParImpar(maximo);
