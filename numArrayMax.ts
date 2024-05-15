@@ -54,5 +54,5 @@ function parImpar(numero: number): void {
 maximo = encontrarMayor(numArray);
 console.log("El numero más grande del arreglo es: ${maximo}");
 
-// Consulto si el numero es mayor del array es par o impar
+// Consulto si el numero mayor del array es par o impar
 parImpar(maximo);
