@@ -1,23 +1,32 @@
-/*Encontrar el elemento más grande del arreglo
+// Definir el arreglo
+const arr: number[] = [4,7,9,3,1,45,67,23,29,78,11,16];
 
-Dado el siguiente arreglo
-[4,7,9,3,1,45,67,23,29,78,11,16]
-- Crear un programa que encuentre cuál es el número
-más grande del arreglo e imprimirlo por consola
-- Almacenar el número más grande en una variable
-global y pasarlo a una función para determinar si el
-número es par o impar
-*/
-import * as rls from "readline-sync";
-let dimensionArreglo : number = rls.questionInt(`Ingrese la dimension del arreglo: `);
-let arreglo : number[] = new Array (dimensionArreglo);
-let indice : number;
-let resultado : number = 0;
-for (indice = 0; indice < dimensionArreglo; indice++) {
-arreglo[indice] = rls.questionInt(`Indique el nro que va en la posicion ${indice}: `);
-resultado += arreglo[indice];
+// Variable global para almacenar el número más grande
+let maximo: number = arr[0];
+
+// Función para encontrar el número más grande
+function encontrarMaximo(arreglo: number[]): number {
+    let max = arreglo[0];
+    for (let i = 1; i < arreglo.length; i++) {
+        if (arreglo[i] > max) {
+            max = arreglo[i];
+        }
+    }
+    return max;
 }
-for (indice = 0; indice < dimensionArreglo; indice++) {
-console.log(`El numero en la posicion ${indice} es: ${arreglo[indice]}`);
+
+// Función para determinar si un número es par o impar
+function determinarParImpar(numero: number): void {
+    if (numero % 2 === 0) {
+        console.log(`${numero} es un número par.`);
+    } else {
+        console.log(`${numero} es un número impar.`);
+    }
 }
-console.log(`La suma del arreglo es: ${resultado}`);
+
+// Encontrar el número más grande
+maximo = encontrarMaximo(arr);
+console.log(`El número más grande del arreglo es: ${maximo}`);
+
+// Determinar si el número más grande es par o impar
+determinarParImpar(maximo);
