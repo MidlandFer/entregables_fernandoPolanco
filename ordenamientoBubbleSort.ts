@@ -34,9 +34,3 @@ function intercambiar(arreglo:number[], index1:number, index2:number):void {
 //ordeno el arreglo utilizando el metodo burbujear
 let arregloOrdenado:number[]= burbujear(arrayBurbuja, arrayBurbuja.length);
 console.log("Resultado del arreglo ordenado en descendente: ", arregloOrdenado);
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> e53cb7f6f10e67b38c5a0d5acddfdab1de94a1ac
