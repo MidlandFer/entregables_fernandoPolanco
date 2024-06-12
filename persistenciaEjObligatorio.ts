@@ -6,8 +6,8 @@ let contenidoPrecios:string= " ";
 let contenidoProductos:string= " ";
 
 for(let i:number=0;i< precios.length; i++){
-    contenidoPrecios+= `${precios[i]}  `;
-    contenidoProductos+= `${productos[i]}  `;
+    contenidoPrecios+= `${precios[i]} `;
+    contenidoProductos+= `${productos[i]} `;
 }
 
 fs.writeFileSync('./precios.txt', contenidoPrecios); 
