@@ -15,16 +15,16 @@ fs.writeFileSync('./precios.txt', contenidoPrecios); 
 fs.writeFileSync('./productos.txt', contenidoProductos); 
 console.log("Precios");
 console.log("Productos");
-//creo las constantes parapara leerla información txt
+//creo las constantes parapara leer la información txt
 const datosPrecios:string=fs.readFileSync('./precios.txt' , 'utf8' );
 const datosProductos:string=fs.readFileSync('./productos.txt' , 'utf8' );
 //saco los espcios delante y atras del txt
 const datosPrecios1:string= datosPrecios.trim();
 const datosPrecios2:string= datosProductos.trim();
-//separolos strings y creo los arrays
+//separo los strings y creo los arrays
 const nuevoArray: string[]= datosPrecios1.split(" ");
 const nuevoArray1: string[]= datosPrecios2.split(" ");
-//retorno arrays
+//retorno arrays por consola
 console.log(nuevoArray.toString());
 console.log(nuevoArray1.toString());
 
