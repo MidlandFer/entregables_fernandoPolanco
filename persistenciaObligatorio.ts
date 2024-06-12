@@ -24,8 +24,9 @@ const datosPrecios2:string= datosProductos.trim();
 //separolos strings y creo los arrays
 const nuevoArray: string[]= datosPrecios1.split(" ");
 const nuevoArray1: string[]= datosPrecios2.split(" ");
-console.log(nuevoArray);
-console.log(nuevoArray1);
+//retorno arrays
+console.log(nuevoArray.toString());
+console.log(nuevoArray1.toString());
 
 
 
