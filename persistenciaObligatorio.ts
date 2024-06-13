@@ -1,6 +1,6 @@
 import * as fs from "node:fs";
 
-// decalro los arrays
+// declaro los arrays
 const precios: number[] = [525, 3500, 400, 1999];
 const productos: string[] = ["Leche", "Galletitas", "Harina", "Queso"];
 let contenidoPrecios:string= " ";
