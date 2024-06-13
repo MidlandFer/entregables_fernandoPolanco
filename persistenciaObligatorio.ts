@@ -1,3 +1,4 @@
+//importo fs
 import * as fs from "node:fs";
 
 // declaro los arrays
