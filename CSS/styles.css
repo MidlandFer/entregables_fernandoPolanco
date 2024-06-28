@@ -10,10 +10,10 @@ background-color: gray;
 height: 139px;
 width:  970px;
 position: absolute;
-top: 8px;
 bottom: 0px;
 right: 0px;
 left: 200px;
+top: 8px;
 }
 
 .contenedor_3 {
@@ -23,10 +23,10 @@ border-width: 3px;
 width: 1158px;
 height: 52px;
 position: absolute;
-top: 159px;
 bottom: 0px;
 right: 0px;
 left: 8px;
+top: 159px;
 }
 
 .contenedor_4 {
@@ -42,8 +42,8 @@ background-color:aqua;
 width: 444px;
 height: 227px;
 position: absolute;
-top: 235px;
 left: 260px;
+top: 235px;
 
 }
 
@@ -52,8 +52,8 @@ background-color:darkviolet;
 width: 444px;
 height: 227px;
 position: absolute;
-top: 235px;
 left: 725px;
+top: 235px;
 }
 
 .contenedor_7 {
@@ -61,8 +61,8 @@ background-color:orange;
 width: 912px;
 height: 301px;
 position: absolute;
-top: 485px;
 left: 258px;
+top: 485px;
 
 }
 
